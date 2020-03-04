@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[detail]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard clear_float">
+      <div class="side">
+        <dl class="option clear_float">
+          <dt>{$=take('index.title', 'lng')}</dt>{$=transfer('type=new;tpl=dd')}
+        </dl>
+      </div>
+      <div class="main">
+        <div class="content">
+          <h1>{$topic}</h1>
+          <div class="text">{$=encodeText(#content)}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+  </item_list>
+</xml>

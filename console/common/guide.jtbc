@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbcf" author="jetiben" order="cache,log,account,role,xml,file">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[def]]></name>
+      <zh-cn><![CDATA[manage.php?type=dashbord]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[guide]]></name>
+      <zh-cn><![CDATA[{"text":"系统管理","icon":"1","link":""}]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

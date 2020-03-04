@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[title]]></name>
+      <zh-cn><![CDATA[媒体素材]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-menu-1]]></name>
+      <zh-cn><![CDATA[全部]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-menu-2]]></name>
+      <zh-cn><![CDATA[图片]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-menu-3]]></name>
+      <zh-cn><![CDATA[视频]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-menu-4]]></name>
+      <zh-cn><![CDATA[文档]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-menu-100]]></name>
+      <zh-cn><![CDATA[其他]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-sort-1]]></name>
+      <zh-cn><![CDATA[按常用]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-sort-2]]></name>
+      <zh-cn><![CDATA[按最新]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-tips-list-null]]></name>
+      <zh-cn><![CDATA[当前条件下没有找到任何素材]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

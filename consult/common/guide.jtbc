@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[popedom]]></name>
+      <zh-cn><![CDATA[add,edit,dispose,delete]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[guide]]></name>
+      <zh-cn><![CDATA[{"text":"留言咨询","icon":"12","link":"manage.php?type=list"}]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

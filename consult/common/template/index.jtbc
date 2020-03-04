@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[default]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard">
+      <div class="full content">
+        <h1>{$=htmlEncode($take('index.title', 'lng'))}</h1>
+        <div class="text">
+          <p align="center">{$=htmlEncode($take('index.text-tips-1', 'lng'))}</p>
+          <div class="tinyform">
+            <form mode="ajaxPost" action="api.php?type=action&amp;action=add" onsubmit="return false;">
+              <ul>
+                <li><input type="text" name="name" placeholder="{$=take('global.config.name', 'lng')}" class="i1" /></li>
+                <li><input type="text" name="mobile" placeholder="{$=take('global.config.mobile', 'lng')}" class="i1" /></li>
+                <li><input type="text" name="email" placeholder="{$=take('global.config.email', 'lng')}" class="i1" /></li>
+                <li><textarea name="content" placeholder="{$=take('global.config.content', 'lng')}" class="t1"></textarea></li>
+                <li><button type="submit" class="b2 submit">{$=take('global.config.submit', 'lng')}</button></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+  </item_list>
+</xml>

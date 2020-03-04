@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[list]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard">
+      <div class="selector"><ul mode="pitchon" pitchon="li[name='li{$-category}']">{$=transfer('genre=universal/category;type=order;baseurl=./;tpl=li-list', array('fid' => 0, 'genre' => '{$>genre}'))}</ul></div>
+      <div class="full pictures clear_float">{@}
+        <div class="item">
+          <a href="{$=htmlEncode($createURL('detail', '{$id}'))}">
+            <p class="image"><img src="{$=htmlEncode($getJsonParam(#image, 'fileurl'))}" alt="" /></p>
+            <p class="topic">{$topic}</p>
+          </a>
+        </div>{@}
+        <div class="clear"></div>
+        <div class="pagi">{$=pagi('{$-pagi-pagenum}', '{$-pagi-pagetotal}', $createURL('list', '{$-category}', array('page' => '[~page]')), 'pagi-2')}</div>
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+    <item>
+      <name><![CDATA[detail]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard">
+      <div class="selector"><ul mode="pitchon" pitchon="li[name='li{$category}']">{$=transfer('genre=universal/category;type=order;baseurl=./;tpl=li-list', array('fid' => 0, 'genre' => '{$>genre}'))}</ul></div>
+      <div class="full content">
+        <h1>{$topic}</h1>
+        <div class="text">{$=encodeText(#content)}</div>
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+  </item_list>
+</xml>

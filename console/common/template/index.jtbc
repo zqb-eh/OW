@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[default]]></name>
+      <default><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+<meta http-equiv="Content-Type" content="text/html; charset={$=CHARSET}" />
+<title>{$=take('index.title', 'lng')}</title>
+<script type="text/javascript" src="{$=$global.assetspath}/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.js"></script>
+<script type="text/javascript" src="{$=$assetspath}/js/jtbc.console.min.js"></script>
+<link type="text/css" rel="stylesheet" href="{$=$assetspath}/global.css" />
+</head>
+<body>
+<div id="console" root="{$=getActualRoute()}"></div>
+<script type="text/javascript">$(document).ready(function() { jtbc.console.ready(); });</script>
+</body>
+</html>]]></default>
+    </item>
+  </item_list>
+</xml>

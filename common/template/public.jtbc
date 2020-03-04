@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[header]]></name>
+      <default><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+<meta http-equiv="Content-Type" content="text/html; charset={$=CHARSET}" />
+<meta name="keywords" content="{$=htmlEncode($getPageParam('keywords'))}" />
+<meta name="description" content="{$=htmlEncode($getPageParam('description'))}" />
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
+<title>{$=htmlEncode($getPageTitle())}</title>
+<script type="text/javascript" src="{$=$global.assetspath}/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.js"></script>
+<script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.frontend.js"></script>
+<link type="text/css" rel="stylesheet" href="{$=$global.assetspath}/themes/{$=THEME}/global.css" />
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="desk"></div>
+    <div class="logo"><a href="{$=getActualRoute('./')}">政企帮</a></div>
+    <div class="menu" mode="pitchon" pitchon="li[name='menu{$=$genre}']">
+      <ul>
+        <li name="menu"><a href="{$=getActualRoute('./')}">{$=take('.public.menu-1', 'lng')}</a></li>
+        <li name="menuaboutus"><a href="{$=getActualRoute('aboutus/')}">{$=take('.public.menu-2', 'lng')}</a></li>
+        <li name="menucase"><a href="{$=getActualRoute('case/')}">{$=take('.public.menu-3', 'lng')}</a></li>
+        <li name="menuteam"><a href="{$=getActualRoute('team/')}">{$=take('.public.menu-4', 'lng')}</a></li>
+        <li name="menucareer"><a href="{$=getActualRoute('career/')}">{$=take('.public.menu-5', 'lng')}</a></li>
+        <li name="menunews"><a href="{$=getActualRoute('news/')}">{$=take('.public.menu-6', 'lng')}</a></li>
+        <li name="menucontactus"><a href="{$=getActualRoute('contactus/')}">{$=take('.public.menu-7', 'lng')}</a></li>
+        <li name="menuconsult"><a href="{$=getActualRoute('consult/')}">{$=take('.public.menu-8', 'lng')}</a></li>
+      </ul>
+    </div>
+    <span mode="submenu" selector="div.menu" class="menu"><em class="e1"></em><em class="e2"></em><em class="e3"></em></span>
+  </div>
+  <div class="headertakeup"></div>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[footer]]></name>
+      <default><![CDATA[  <div class="footer">
+    <div class="copyright">&copy; 2004-{$=formatDate($getDateTime(), '-1')} <a href="http://www.jtbc.cn/">JTBC</a>(<a href="http://www.jtbc.cn/">CMS</a>) All Rights Reserved.<br /><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备14034375号-1</a></div>
+  </div>
+</div>
+<script type="text/javascript">$(document).ready(function() { jtbc.frontend.ready(); });</script>
+</body>
+</html>]]></default>
+    </item>
+  </item_list>
+</xml>

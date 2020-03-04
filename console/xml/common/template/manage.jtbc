@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[part-toplink]]></name>
+      <default><![CDATA[<a class="link mid-list-1" link="?type=list&amp;symbol=.tpl.index&amp;mid=.mid-list-1">{$=take('manage.text-menu-1', 'lng')}</a><a class="link mid-list-2" link="?type=list&amp;symbol=.tpl.public&amp;mid=.mid-list-2">{$=take('manage.text-menu-2', 'lng')}</a><a class="link mid-list-3" link="?type=list&amp;symbol=.tpl.transfer&amp;mid=.mid-list-3">{$=take('manage.text-menu-3', 'lng')}</a>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[add]]></name>
+      <default><![CDATA[<div class="title">{$=take('manage.text-tit-add', 'lng')}</div>
+<div class="tinyform">
+  <form mode="ajaxPost" action="?type=action&amp;action=add" onsubmit="return false;">
+    <ol>
+      <li><input type="hidden" name="symbol" value="{$-symbol}" /><input name="nodename" type="text" class="i1" placeholder="{$=take('manage.text-nodename', 'lng')}" /></li>
+    </ol>
+    <div class="submit"><button class="b2 submit">{$=take('global.config.submit', 'lng')}</button><span class="tips"></span></div>
+  </form>
+</div>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[list]]></name>
+      <default><![CDATA[<nav genre="{$=$genre}"><span>{$-account-nav}</span></nav>
+<div class="manager" module="list" genre="{$=$genre}" filename="{$=$filename}">
+  <toplink mode="pitchon" upitchon="{$=htmlEncode($get('mid'))}">{$=take('{$>this}.part-toplink', 'tpl', '1')}</toplink>
+  <div class="table">
+    <h3><span class="hand nodeadd show-{$-account-popedom-add}" symbol="{$-symbol}">+ </span>{$=take('manage.text-tit-node', 'lng')} [ {$-current-key} ]</h3>
+    <rightarea><span class="text">{$=take('manage.text-select-node', 'lng')}</span>&nbsp;&nbsp;<select mode="selectOption" name="node" class="s1" val="{$-current-key}" action="{$=htmlEncode($replaceQuerystring('node', null))}">{@}<option value="{$key}">{$key}</option>{@}</select>&nbsp;&nbsp;&nbsp;<icons><btn symbol="{$-symbol}" class="b1 fileselect" title="{$=take('manage.text-tips-fileselect', 'lng')}"></btn></icons>&nbsp;&nbsp;&nbsp;<div class="searchbox"><form action="?type=list" onsubmit="return false"><input type="text" name="keyword" class="keyword" placeholder="{$=take('manage.text-symbol', 'lng')}" value="{$-symbol}" /><input type="submit" class="search" value="" parmname="symbol" /></form></div></rightarea>
+    <form class="nodeedit" action="?type=action&amp;action=edit" text-ok="{$=take('::console.iknow', 'lng')}" onsubmit="return false;">
+      <table cellpadding="0" cellspacing="0" class="tableF">
+        <tbody>
+          <tr>
+            <td colspan="2"><span class="info-1">{$=take('global.config.path', 'lng')}: {$-realpath}</span></td>
+          </tr>
+          <tr>
+            <td colspan="2" height="20"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="CodeMirrorContent"><textarea id="codemirror" name="content" class="hide">{$-current-val}</textarea></div></td>
+          </tr>
+          <tr>
+            <td colspan="2" height="20"><input type="hidden" name="symbol" value="{$-symbol}" /><input type="hidden" name="node" value="{$-current-key}" /></td>
+          </tr>
+          <tr>
+            <td><button class="b2 nodeedit show-{$-account-popedom-edit}">{$=take('manage.text-node-edit', 'lng')}</button></td>
+            <td class="right"><button class="b3 nodedelete show-{$-account-popedom-delete}" symbol="{$-symbol}" nodename="{$-current-key}" confirm_b3="{$=take('::console.control-cancel', 'lng')}" confirm_b2="{$=take('::console.control-confirm', 'lng')}" confirm_text="{$=take('::console.control-confirm-delete', 'lng')}[{$-current-key}]{$=take('::console.q', 'lng')}">{$=take('manage.text-node-delete', 'lng')}</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</div>
+<dfn cssurl="{$=$assetspath}/editor/codemirror/lib/codemirror.css"></dfn>
+<dfn cssurl="{$=$assetspath}/editor/codemirror/theme/monokai.css"></dfn>
+<dfn cssurl="{$=$assetspath}/editor/codemirror/addon/display/fullscreen.css"></dfn>
+<dfn cssurl="{$=$assetspath}/editor/codemirror/addon/hint/show-hint.css"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/lib/codemirror.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/addon/selection/active-line.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/addon/display/fullscreen.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/addon/hint/show-hint.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/htmlmixed/htmlmixed.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/xml/xml.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/css/css.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/clike/clike.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/php/php.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/javascript/javascript.js"></dfn>
+<dfn url="{$=$genre}/{$=$assetspath}/js/jtbc.console.manage.js"></dfn>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[list-disabled]]></name>
+      <default><![CDATA[<nav genre="{$=$genre}"><span>{$-account-nav}</span></nav>
+<div class="manager" module="list" genre="{$=$genre}" filename="{$=$filename}" filemode="{$-filemode}">
+  <toplink>{$=take('{$>this}.part-toplink', 'tpl', '1')}</toplink>
+  <div class="table">
+    <h3><span class="hand nodeadd show-{$-account-popedom-add}" symbol="{$-symbol}">+ </span>{$=take('manage.text-tit-node', 'lng')}</h3>
+    <table cellpadding="0" cellspacing="0" class="tableF">
+      <tbody>
+        <tr>
+          <td><span class="info-1">{$=take('manage.text-tips-null', 'lng')}</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<dfn url="{$=$genre}/{$=$assetspath}/js/jtbc.console.manage.js"></dfn>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[fileselect]]></name>
+      <default><![CDATA[<div class="title">{$=take('manage.text-tit-fileselect', 'lng')}</div>
+<div class="tinyform">
+  <ol class="small" text-file-null="{$=take('manage.text-tips-fileselect-null', 'lng')}" symbol-p1="{$-symbol-p1}" symbol-p2="{$-symbol-p2}" symbol-p3="{$-symbol-p3}">
+    <li text-child="{$=take('manage.text-genre-child', 'lng')}"><h6>{$=take('manage.text-genre', 'lng')}</h6><span class="select-genre"></span></li>
+    <li><h6>{$=take('manage.text-mold', 'lng')}</h6><span class="select-mold"><select class="s1 full" name="mold"><option value="tpl">{$=take('manage.text-mold-tpl', 'lng')}</option><option value="lng">{$=take('manage.text-mold-lng', 'lng')}</option><option value="cfg">{$=take('manage.text-mold-cfg', 'lng')}</option></select></span></li>
+    <li><h6>{$=take('manage.text-file', 'lng')}</h6><span class="select-file"></span></li>
+  </ol>
+</div>
+<div class="button"><button class="b2 iselected" text-error-1="{$=take('manage.text-tips-fileselect-error-1', 'lng')}">{$=take('::console.iselected', 'lng')}</button></div>]]></default>
+    </item>
+  </item_list>
+</xml>

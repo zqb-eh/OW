@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[username]]></name>
+      <zh-cn><![CDATA[用户名]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[password]]></name>
+      <zh-cn><![CDATA[密码]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[cpassword]]></name>
+      <zh-cn><![CDATA[确认密码]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[role]]></name>
+      <zh-cn><![CDATA[角色]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[email]]></name>
+      <zh-cn><![CDATA[电子邮件]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[time]]></name>
+      <zh-cn><![CDATA[创建时间]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

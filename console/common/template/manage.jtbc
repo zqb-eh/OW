@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[part-nav]]></name>
+      <default><![CDATA[<u class="{$-class}" genre="{$genre}" link="{$link}">{$text}</u>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[part-nav-arrow]]></name>
+      <default><![CDATA[<em></em>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[part-leftmenu]]></name>
+      <default><![CDATA[<ul>{@}
+  <li><em class="line"></em><span class="tit t{$-level}" genre="{$genre}" mytitle="{$text}" link="{$link}"><em class="e{$icon}"></em><b>{$text}</b><d class="{$-d}"></d></span>{$-child}</li>{@}
+</ul>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[part-leftmenu-dl]]></name>
+      <default><![CDATA[<dl>{@}
+  <dd><span class="tit t{$-level}" genre="{$genre}" link="{$link}"><b>{$text}</b><d class="{$-d}"></d></span>{$-child}</dd>{@}
+</dl>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[dashbord]]></name>
+      <default><![CDATA[<nav><span>{$-account-nav}<em></em>{$=take('manage.dashbord-home', 'lng')}</span></nav>
+<div class="manager">
+  <div class="table">
+    <h3>{$=take('manage.text-tit-1', 'lng')}</h3>
+    <p class="text">{$-hello}</p>
+  </div>
+  <div class="table">
+    <h3>{$=take('manage.text-tit-2', 'lng')}</h3>
+    <ul class="para">
+      <li><b>{$=take('manage.text-sys-para-0', 'lng')}</b>{$-sys-para-0}</li>
+      <li><b>{$=take('manage.text-sys-para-1', 'lng')}</b>{$-sys-para-1}</li>
+      <li><b>{$=take('manage.text-sys-para-2', 'lng')}</b>{$-sys-para-2}</li>
+      <li><b>{$=take('manage.text-sys-para-3', 'lng')}</b>{$-sys-para-3}</li>
+      <li><b>{$=take('manage.text-sys-para-4', 'lng')}</b>{$-sys-para-4}</li>
+      <li><b>{$=take('manage.text-sys-para-5', 'lng')}</b>{$-sys-para-5}</li>
+      <li><b>{$=take('manage.text-sys-para-6', 'lng')}</b>{$-sys-para-6}</li>
+      <li><b>{$=take('manage.text-sys-para-7', 'lng')}</b>{$-sys-para-7}s</li>
+      <li><b>{$=take('manage.text-sys-para-8', 'lng')}</b>{$-sys-para-8}</li>
+      <li><b>{$=take('manage.text-sys-para-9', 'lng')}</b>{$-sys-para-9}</li>
+      <li><b>{$=take('manage.text-sys-para-10', 'lng')}</b>{$-sys-para-10}</li>
+    </ul>
+  </div>
+</div>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[modifypassword]]></name>
+      <default><![CDATA[<div class="title">{$=take('manage.text-modifypassword-tit', 'lng')}</div>
+<div class="tinyform">
+  <form action="?type=action&amp;action=modifypassword" onsubmit="return false;">
+    <ol>
+      <li><input name="password" type="password" class="i1" placeholder="{$=take('manage.text-modifypassword-password', 'lng')}" /></li>
+      <li><input name="newpassword" type="password" class="i1" placeholder="{$=take('manage.text-modifypassword-newpassword', 'lng')}" /></li>
+      <li><input name="newcpassword" type="password" class="i1" placeholder="{$=take('manage.text-modifypassword-newcpassword', 'lng')}" /></li>
+    </ol>
+    <div class="submit"><button class="b2">{$=take('::console.confirm-modify', 'lng')}</button><span class="tips">{$=take('manage.text-modifypassword-tips', 'lng')}</span></div>
+  </form>
+</div>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[getlang]]></name>
+      <default><![CDATA[<b><flag class="f{$-current-lang-val}" title="{$=take('manage.lang-tips-1', 'lng')}"></flag><span>{$-current-lang-text}</span></b><em></em>
+<ul>{@}
+  <li val="{$-lang-val}" text="{$-lang-text}"><flag class="f{$-lang-val}"></flag><span class="hand">{$-lang-text}</span></li>{@}
+</ul>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[console]]></name>
+      <default><![CDATA[<div class="console">
+  <div class="topbar">
+    <h1>{$=take('index.title', 'lng')}</h1>
+    <span class="menu hand"><l1></l1><l2></l2><l3></l3></span>
+    <right>
+      <account class="section">
+        <b>{$-account-username}</b><em></em>
+        <ul>
+          <li class="l1">{$=take('manage.modifypassword', 'lng')}</li>
+          <li class="l2">{$=take('manage.logout', 'lng')}</li>
+        </ul>
+      </account>
+      <lang class="section"></lang>
+      <logout class="hand" title="{$=take('manage.logout', 'lng')}" confirm_text="{$=take('manage.logout-confirm', 'lng')}" confirm_b2="{$=take('manage.logout-confirm-b2', 'lng')}" confirm_b3="{$=take('manage.logout-confirm-b3', 'lng')}"></logout>
+    </right>
+  </div>
+  <div class="container">
+    <div class="leftmenu">{$-account-leftmenu}</div>
+    <div class="maincontent">
+      <div class="main" def="{$=take('guide.def', 'cfg')}" urlerror="{$=take('::console.urlerror', 'lng')}" ikown="{$=take('::console.iknow', 'lng')}"></div>
+      <div class="waiting"><bar></bar></div>
+    </div>
+  </div>
+</div>
+<dfn call="jtbc.console.initConsole();"></dfn>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[login]]></name>
+      <default><![CDATA[<div class="login">
+  <h1>{$=take('index.title', 'lng')}</h1>
+  <form onsubmit="return false;">
+    <div class="field">
+      <em class="u"></em>
+      <input type="text" name="username" class="username" placeholder="{$=take('manage.username', 'lng')}" />
+    </div>
+    <div class="field">
+      <em class="p"></em>
+      <input type="password" name="password" class="password" placeholder="{$=take('manage.password', 'lng')}" />
+    </div>
+    <div class="button clear_float"><label class="remember checkbox"><input type="checkbox" name="remember" value="1" /><vicon></vicon><span>{$=take('manage.remember', 'lng')}</span></label><button class="b1" loading="{$=take('manage.logining', 'lng')}">{$=take('manage.login', 'lng')}</button></div>
+  </form>
+  <div class="message"></div>
+  <div class="error show-{$-db-error}">{$=take('manage.text-tips-db-error', 'lng')}</div>
+</div>
+<dfn call="jtbc.console.initLogin();"></dfn>]]></default>
+    </item>
+  </item_list>
+</xml>

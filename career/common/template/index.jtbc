@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[list]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard">
+      <div class="full outline clear_float">
+        <h1>{$=take('index.slogan', 'lng')}</h1>{@}
+        <div class="item">
+          <p class="topic">{$topic}</p>
+          <ul>{$=formatLine(#intro, '<li>$line</li>')}</ul>
+          <p class="tips">{$=take('index.text-tips-1', 'lng')}</p>
+          <p class="email"><a href="mailto:{$email}">{$email}</a></p>
+        </div>{@}
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+  </item_list>
+</xml>

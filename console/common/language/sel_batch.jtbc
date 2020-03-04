@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[null]]></name>
+      <zh-cn><![CDATA[请选择]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[dispose]]></name>
+      <zh-cn><![CDATA[处理]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[verify]]></name>
+      <zh-cn><![CDATA[审核]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[publish]]></name>
+      <zh-cn><![CDATA[发布]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[lock]]></name>
+      <zh-cn><![CDATA[锁定]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[delete]]></name>
+      <zh-cn><![CDATA[删除]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

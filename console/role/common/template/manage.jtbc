@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[part-toplink]]></name>
+      <default><![CDATA[<a class="link mid-list-1" link="?type=list&amp;mid=.mid-list-1">{$=take('manage.text-menu-1', 'lng')}</a><a class="link mid-add show-{$-account-popedom-add}" link="?type=add&amp;mid=.mid-add">{$=take('manage.text-menu-3', 'lng')}</a>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[part-select-popedom]]></name>
+      <default><![CDATA[<ul>{@}
+  <li class="l{$-level} li-{$genre}"><label class="checkbox genre"><input type="checkbox" name="genre" class="genre" value="{$genre}"{$-checked} /><vicon></vicon><span>{$text}</span></label>{$-category}{$-popedom}{$-child}</li>{@}
+</ul>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[part-select-popedom-category]]></name>
+      <default><![CDATA[<span class="category ash hand" title="{$=take('manage.text-tips-category', 'lng')}">({$=take('manage.text-category', 'lng')})<input type="hidden" name="genre_category" class="genre_category" value="{$category}" /></span>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[part-select-popedom-option]]></name>
+      <default><![CDATA[<label class="checkbox option"><input type="checkbox" name="genre_popedom" class="genre_popedom" genre="{$genre}" value="{$popedom}"{$-checked} /><vicon></vicon><span>{$text}</span></label>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[part-select-category-li]]></name>
+      <default><![CDATA[<ul>{@}<li><label class="checkbox"><input type="checkbox" name="category" value="{$id}" /><vicon></vicon><span>{$topic}</span></label>{$-child}</li>{@}</ul>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[part-select-category-dd]]></name>
+      <default><![CDATA[<dl>{@}<dd><label class="checkbox"><input type="checkbox" name="category" value="{$id}" /><vicon></vicon><span>{$topic}</span></label>{$-child}</dd>{@}</dl>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[add]]></name>
+      <default><![CDATA[<nav genre="{$=$genre}"><span>{$-account-nav}</span></nav>
+<div class="manager" module="add" genre="{$=$genre}" filename="{$=$filename}" text-lang-1="{$=take('manage.text-tips-lang-null', 'lng')}" text-lang-ok="{$=take('::console.iknow', 'lng')}">
+  <toplink mode="pitchon" pitchon=".mid-add" upitchon="{$=htmlEncode($get('mid'))}">{$=take('{$>this}.part-toplink', 'tpl', '1')}</toplink>
+  <div class="table">
+    <h3>{$=take('manage.text-tit-add', 'lng')}</h3>
+    <form mode="ajaxPost" action="?type=action&amp;action=add" onsubmit="return false;">
+      <input type="hidden" name="popedom" />
+      <input type="hidden" name="lang" />
+      <table cellpadding="10" cellspacing="0" class="tableF">
+        <tbody>
+          <tr>
+            <th valign="top"><t>{$=take('config.topic', 'lng')}<r>*</r></t></th>
+            <td><input type="text" name="topic" class="i1" /></td>
+          </tr>
+          <tr>
+            <th valign="top"><t>{$=take('config.popedom', 'lng')}<r>*</r></t></th>
+            <td><div class="popedom">{$-select-popedom-html}</div></td>
+          </tr>
+          <tr>
+            <th valign="top"><t>{$=take('config.lang', 'lng')}<r>*</r></t></th>
+            <td>{$=xmlSelect('::sel_lang.*', '*', 'checkbox', 'lang-select')}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="form_tips"></div>
+      <div class="form_button"><button class="b2 submit" doneclick="toplink a.link:first">{$=take('global.config.submit', 'lng')}</button></div>
+    </form>
+  </div>
+</div>
+<dfn url="{$=$genre}/{$=$assetspath}/js/jtbc.console.manage.js"></dfn>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[edit]]></name>
+      <default><![CDATA[<nav genre="{$=$genre}"><span>{$-account-nav}</span></nav>
+<div class="manager" module="edit" genre="{$=$genre}" filename="{$=$filename}" text-lang-1="{$=take('manage.text-tips-lang-null', 'lng')}" text-lang-ok="{$=take('::console.iknow', 'lng')}">
+  <toplink mode="pitchon" upitchon="{$=htmlEncode($get('mid'))}">{$=take('{$>this}.part-toplink', 'tpl', '1')}</toplink>
+  <div class="table">
+    <h3>{$=take('manage.text-tit-edit', 'lng')}</h3>
+    <form mode="ajaxPost" action="?type=action&amp;action=edit&amp;id={$id}" onsubmit="return false;">
+      <input type="hidden" name="popedom" />
+      <input type="hidden" name="lang" value="{$lang}" />
+      <table cellpadding="10" cellspacing="0" class="tableF">
+        <tbody>
+          <tr>
+            <th valign="top"><t>{$=take('config.topic', 'lng')}<r>*</r></t></th>
+            <td><input type="text" name="topic" class="i1" value="{$topic}" /></td>
+          </tr>
+          <tr>
+            <th valign="top"><t>{$=take('config.popedom', 'lng')}<r>*</r></t></th>
+            <td><div class="popedom">{$-select-popedom-html}</div></td>
+          </tr>
+          <tr>
+            <th valign="top"><t>{$=take('config.lang', 'lng')}<r>*</r></t></th>
+            <td>{$=xmlSelect('::sel_lang.*', '{$lang}', 'checkbox', 'lang-select')}</td>
+          </tr>
+          <tr>
+            <th valign="top"><t>{$=take('config.time', 'lng')}<r>*</r></t></th>
+            <td><input type="text" name="time" class="i1" value="{$time}" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="form_tips"></div>
+      <div class="form_button"><button class="b2 submit">{$=take('global.config.submit', 'lng')}</button></div>
+    </form>
+  </div>
+</div>
+<dfn url="{$=$genre}/{$=$assetspath}/js/jtbc.console.manage.js"></dfn>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[list]]></name>
+      <default><![CDATA[<nav genre="{$=$genre}"><span>{$-account-nav}</span></nav>
+<div class="manager" module="list" genre="{$=$genre}" filename="{$=$filename}">
+  <toplink mode="pitchon" pitchon=".mid-list-1" upitchon="{$=htmlEncode($get('mid'))}">{$=take('{$>this}.part-toplink', 'tpl', '1')}</toplink>
+  <div class="table">
+    <h3>{$=take('manage.text-tit-list', 'lng')}</h3>
+    <table cellpadding="10" cellspacing="1" class="tableL">
+      <thead>
+        <tr>
+          <th width="20" class="center"><label class="checkbox"><input type="checkbox" class="idall" forname="id" value="1" mode="highlightLineAll" /><vicon></vicon></label></th>
+          <th width="40" class="center">{$=take('global.config.id', 'lng')}</th>
+          <th>{$=take('config.topic', 'lng')}</th>
+          <th width="120">{$=take('config.time', 'lng')}</th>
+          <th width="60">{$=take('global.config.control', 'lng')}</th>
+        </tr>
+      </thead>
+      <tbody>{@}
+        <tr>
+          <td class="center"><label class="checkbox"><input type="checkbox" class="id" name="id" value="{$id}" mode="highlightLine" /><vicon></vicon></label></td>
+          <td class="id center">{$id}</td>
+          <td><span class="mainlink" mode="shortcut" parent="2" shortcut="icon.edit>a.link">{$topic}</span></td>
+          <td>{$time}</td>
+          <td><icons mode="iconTips" text-null="{$=take('::console.nopermission', 'lng')}"><icon class="edit show-{$-account-popedom-edit}" title="{$=take('global.config.edit', 'lng')}"><a class="link" link="?type=edit&amp;id={$id}"></a></icon><icon class="delete show-{$-account-popedom-delete}" title="{$=take('global.config.delete', 'lng')}" confirm_b3="{$=take('::console.control-cancel', 'lng')}" confirm_b2="{$=take('::console.control-confirm', 'lng')}" confirm_text="{$=take('::console.control-confirm-delete-id', 'lng')}[{$id}]{$=take('::console.q', 'lng')}" mode="confirmUrlExec" urlexec="?type=action&action=delete&id={$id}"></icon></icons></td>
+        </tr>{@}
+        <tr mode="aloneTips" class="tips hide">
+          <td colspan="6">{$=take('manage.text-tips-list-null', 'lng')}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="control">
+      <div mode="batchSwitch" class="batch show-{$-batch-show}"><span class="text">{$=take('::console.batch-tips', 'lng')}</span><select class="batch">{$=xmlSelect('::sel_batch.*|null,{$-batch-list}', '', 'select')}</select><span class="ok" confirm_b3="{$=take('::console.control-cancel', 'lng')}" confirm_b2="{$=take('::console.control-confirm', 'lng')}" confirm_text="{$=take('::console.control-confirm-batch', 'lng')}">{$=take('::console.control-confirm', 'lng')}</span></div>
+      <div class="pagi">{$=pagi('{$-pagi-pagenum}', '{$-pagi-pagetotal}', $replaceQuerystring('page', '[~page]'))}</div>
+    </div>
+  </div>
+</div>
+<dfn url="{$=$genre}/{$=$assetspath}/js/jtbc.console.manage.js"></dfn>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[category]]></name>
+      <default><![CDATA[<div class="title">{$=take('manage.text-category-tit', 'lng')}</div>
+<div class="substance">
+  <div class="tab">
+    <div mode="singleSelect" class="option" childtag="label">{$=xmlSelect('::sel_lang.*', '', 'label', 'tab-lang')}</div>
+    <div class="item_list">{@}
+      <div class="item">
+        <input type="radio" class="tabradio" name="option" id="tab-lang{$key}" />
+        <div class="item_content popedom_category">{$-select-category-html}</div>
+      </div>{@}
+    </div>
+  </div>
+</div>
+<div class="button"><button class="b2">{$=take('::console.iselected', 'lng')}</button></div>]]></default>
+    </item>
+  </item_list>
+</xml>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[list]]></name>
+      <default><![CDATA[<nav genre="{$=$genre}"><span>{$-account-nav}</span></nav>
+<div class="manager" module="list" genre="{$=$genre}" filename="{$=$filename}">
+  <toplink class="path">{$-path-nav}</toplink>
+  <div class="table">
+    <h3>{$=take('manage.text-tit-list', 'lng')}</h3>
+    <rightarea><button class="b2 addfolder show-{$-account-popedom-add}">{$=take('manage.text-add-folder', 'lng')}</button>&nbsp;<button class="b2 addfile show-{$-account-popedom-add}">{$=take('manage.text-add-file', 'lng')}</button><input type="file" class="upload hide" multiple="multiple" rspath="{$-path}" /></rightarea>
+    <table cellpadding="5" cellspacing="0" class="tableL">
+      <tbody>
+        <tr class="add hide">
+          <td colspan="3"><span class="mainlink"><icon class="file" style="folder"></icon><input type="text" class="add i1" value="newfolder" rspath="{$-path}" /></span></td>
+        </tr>{@}
+        <tr>
+          <td><span class="mainlink hand"><a class="block link" link="{$-linkurl}"><icon class="file" style="{$-style}" val="{$-val}"></icon><label class="hand">{$topic}</label></a><input type="text" class="edit i1 hide" value="{$topic}" rsvalue="{$topic}" rspath="{$path}{$topic}" /></span></td>
+          <td width="130">{$lasttime}</td>
+          <td width="60" class="right"><icons><icon class="edit show-{$-account-popedom-edit}" title="{$=take('global.config.edit', 'lng')}"></icon><icon class="delete show-{$-account-popedom-delete}" rspath="{$path}{$topic}" title="{$=take('global.config.delete', 'lng')}" confirm_b3="{$=take('::console.control-cancel', 'lng')}" confirm_b2="{$=take('::console.control-confirm', 'lng')}" confirm_text="{$=take('::console.control-confirm-delete', 'lng')}[{$topic}]{$=take('::console.q', 'lng')}"></icon></icons></td>
+        </tr>{@}
+        <tr mode="aloneTips" class="tips hide">
+          <td colspan="3">{$=take('manage.text-tips-list-null', 'lng')}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="fileup"></div>
+  </div>
+</div>
+<dfn url="{$=$genre}/{$=$assetspath}/js/jtbc.console.manage.js"></dfn>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[edit]]></name>
+      <default><![CDATA[<nav genre="{$=$genre}"><span>{$-account-nav}</span></nav>
+<div class="manager" module="edit" genre="{$=$genre}" filename="{$=$filename}" filemode="{$-filemode}">
+  <toplink class="path">{$-path-nav}</toplink>
+  <div class="table">
+    <h3>{$=take('manage.text-tit-edit', 'lng')}</h3>
+    <form class="savefile" action="?type=action&amp;action=editfile&amp;path={$-path-urlencode}" text-ok="{$=take('::console.iknow', 'lng')}" onsubmit="return false;">
+      <table cellpadding="0" cellspacing="0" class="tableF">
+        <tbody>
+          <tr>
+            <td><div class="CodeMirrorContent"><textarea id="codemirror" name="content" class="hide">{$-file-content}</textarea></div></td>
+          </tr>
+          <tr>
+            <td height="20"></td>
+          </tr>
+          <tr>
+            <td><button class="b2 savefile">{$=take('manage.text-save-file', 'lng')}</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</div>
+<dfn cssurl="{$=$assetspath}/editor/codemirror/lib/codemirror.css"></dfn>
+<dfn cssurl="{$=$assetspath}/editor/codemirror/theme/monokai.css"></dfn>
+<dfn cssurl="{$=$assetspath}/editor/codemirror/addon/display/fullscreen.css"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/lib/codemirror.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/addon/selection/active-line.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/addon/display/fullscreen.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/htmlmixed/htmlmixed.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/xml/xml.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/css/css.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/clike/clike.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/php/php.js"></dfn>
+<dfn url="{$=$assetspath}/editor/codemirror/mode/javascript/javascript.js"></dfn>
+<dfn url="{$=$genre}/{$=$assetspath}/js/jtbc.console.manage.js"></dfn>]]></default>
+    </item>
+    <item>
+      <name><![CDATA[edit-lock]]></name>
+      <default><![CDATA[<nav genre="{$=$genre}"><span>{$-account-nav}</span></nav>
+<div class="manager" module="edit" genre="{$=$genre}" filename="{$=$filename}" filemode="{$-filemode}">
+  <toplink class="path">{$-path-nav}</toplink>
+  <div class="table">
+    <h3>{$=take('manage.text-tit-edit', 'lng')}</h3>
+    <table cellpadding="0" cellspacing="0" class="tableF">
+      <tbody>
+        <tr>
+          <td><span class="info-1">{$=take('manage.text-tips-edit-lock', 'lng')}</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>]]></default>
+    </item>
+  </item_list>
+</xml>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[list]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard">
+      <div class="full synopsis clear_float">{@}
+        <div class="item">
+          <p class="photo"><img src="{$=htmlEncode($getJsonParam(#photo, 'fileurl'))}" alt="" /></p>
+          <p class="topic">{$name} <em>({$position})</em></p>
+          <p class="intro">{$=encodeTextArea(#intro)}</p>
+          <p class="clear"></p>
+        </div>{@}
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+  </item_list>
+</xml>

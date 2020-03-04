@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbcf" author="jetiben" order="material,upload,category,link">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[guide]]></name>
+      <zh-cn><![CDATA[{"text":"公共管理","icon":"6","link":""}]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

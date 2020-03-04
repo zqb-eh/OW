@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[topic]]></name>
+      <zh-cn><![CDATA[文件名]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[genre]]></name>
+      <zh-cn><![CDATA[模块名]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[filepath]]></name>
+      <zh-cn><![CDATA[文件路径]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[filesize]]></name>
+      <zh-cn><![CDATA[文件大小]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[time]]></name>
+      <zh-cn><![CDATA[创建时间]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

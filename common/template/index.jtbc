@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[default]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="home">
+    <div class="banner">
+      <h2>{$=take('index.slogan', 'lng')}</h2>
+      <h3>{$=take('index.intro', 'lng')}</h3>
+      <a class="more" href="{$=getActualRoute('aboutus')}/">{$=take('index.text-more', 'lng')}</a>
+    </div>
+    <div class="home_item">
+      <h2>{$=take('global.case:index.title', 'lng')}</h2>
+      <div class="cupboard">
+        <div class="full pictures clear_float">
+          <jtbc $function="transfer" $parameter="genre=case;type=new;limit=3">
+            <div class="item">
+              <a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}', null, '{$-genre}'))}">
+                <p class="image"><img src="{$-baseurl}{$=htmlEncode($getJsonParam(#image, 'fileurl'))}" alt="" /></p>
+                <p class="topic">{$topic}</p>
+              </a>
+            </div>
+          </jtbc>
+        </div>
+      </div>
+    </div>
+    <div class="home_item">
+      <h2>{$=take('global.team:index.title', 'lng')}</h2>
+      <div class="cupboard">
+        <div class="full synopsis clear_float">
+          <jtbc $function="transfer" $parameter="genre=team;type=new;limit=4">
+            <div class="item">
+              <p class="photo"><img src="{$-baseurl}{$=htmlEncode($getJsonParam(#photo, 'fileurl'))}" alt="" /></p>
+              <p class="topic">{$name} <em>({$position})</em></p>
+              <p class="intro">{$=encodeTextArea(#intro)}</p>
+              <p class="clear"></p>
+            </div>
+          </jtbc>
+        </div>
+      </div>
+    </div>
+    <div class="home_item">
+      <h2>{$=take('global.universal/link:sel_group.1', 'lng')}</h2>
+      <div class="cupboard">
+        <div class="full links clear_float">
+          <jtbc $function="transfer" $parameter="genre=universal/link;type=new;limit=3;group=1">
+            <div class="item"><a href="{$url}" target="{$target}"><span><img src="{$-baseurl}{$=htmlEncode($getJsonParam(#image, 'fileurl'))}" alt="" /></span></a></div>
+          </jtbc>
+        </div>
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+  </item_list>
+</xml>

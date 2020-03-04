@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[list]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard">
+      <div class="full content">
+        <h1>{$=htmlEncode($take('index.title', 'lng'))}</h1>
+        <div class="search">
+          <div class="result">
+            <ul>{@}
+              <li>
+                <a href="{$=getActualRoute(#genre)}/{$=htmlEncode($createURL('detail', '{$id}', null, #genre))}">{$=replaceKeyWordHighlight($htmlEncode($replaceKeyWordHighlight(#topic, $getParam('-keyword'))))}</a>
+                <a class="url" href="{$=getActualRoute(#genre)}/{$=htmlEncode($createURL('detail', '{$id}', null, #genre))}">{$=htmlEncode($getParam('urlpre'))}{$=htmlEncode($getLRStr($getParam('url'), $getParam('genre'), 'leftr'))}{$=htmlEncode(#genre)}/{$=htmlEncode($createURL('detail', '{$id}', null, #genre))}</a>
+              </li>{@}
+            </ul>
+          </div>
+          <div class="pagi">{$=pagi('{$-pagi-pagenum}', '{$-pagi-pagetotal}', $replaceQuerystring('page', '[~page]'), 'pagi-2')}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+  </item_list>
+</xml>
