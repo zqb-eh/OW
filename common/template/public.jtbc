@@ -36,20 +36,14 @@
         <li name="menunews"><a href="{$=getActualRoute('news/')}">{$=take('.public.menu-6', 'lng')}</a></li>
         <!-- 活动案例 -->
         <li name="menucase"><a href="{$=getActualRoute('case/')}">{$=take('.public.menu-3', 'lng')}</a></li>
-        <!-- 活动案例 -->
-        <li name="menuservice"><a href="{$=getActualRoute('case/')}">{$=take('.public.menu-9', 'lng')}</a></li>
+        <!-- 服务 -->
+        <li name="menuzqbservice"><a href="{$=getActualRoute('zqbservice/')}">{$=take('.public.menu-9', 'lng')}</a></li>
         <!-- 团队信息 -->
-        <!--
-        <li name="menuteam"><a href="{$=getActualRoute('team/')}">{$=take('.public.menu-4', 'lng')}</a></li>
-        -->
+        <!--<li name="menuteam"><a href="{$=getActualRoute('team/')}">{$=take('.public.menu-4', 'lng')}</a></li>-->
         <!-- 招募 -->
-        <!--
-        <li name="menucareer"><a href="{$=getActualRoute('career/')}">{$=take('.public.menu-5', 'lng')}</a></li>
-        -->
+        <!--<li name="menucareer"><a href="{$=getActualRoute('career/')}">{$=take('.public.menu-5', 'lng')}</a></li>-->
         <!-- 联系我们 -->
-        <!--
-        <li name="menucontactus"><a href="{$=getActualRoute('contactus/')}">{$=take('.public.menu-7', 'lng')}</a></li>
-        -->
+        <!--<li name="menucontactus"><a href="{$=getActualRoute('contactus/')}">{$=take('.public.menu-7', 'lng')}</a></li>-->
         <!-- 关于我们 -->
         <li name="menuaboutus"><a href="{$=getActualRoute('aboutus/')}">{$=take('.public.menu-2', 'lng')}</a></li>
         <!-- 留言咨询 -->
@@ -58,7 +52,8 @@
     </div>
     <span mode="submenu" selector="div.menu" class="menu"><em class="e1"></em><em class="e2"></em><em class="e3"></em></span>
   </div>
-  <div class="headertakeup"></div>]]></default>
+  <div class="headertakeup"></div>]]>
+      </default>
     </item>
     <item>
       <name><![CDATA[footer]]></name>
