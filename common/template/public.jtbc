@@ -32,12 +32,27 @@
     <div class="menu" mode="pitchon" pitchon="li[name='menu{$=$genre}']">
       <ul>
         <li name="menu"><a href="{$=getActualRoute('./')}">{$=take('.public.menu-1', 'lng')}</a></li>
-        <li name="menuaboutus"><a href="{$=getActualRoute('aboutus/')}">{$=take('.public.menu-2', 'lng')}</a></li>
-        <li name="menucase"><a href="{$=getActualRoute('case/')}">{$=take('.public.menu-3', 'lng')}</a></li>
-        <li name="menuteam"><a href="{$=getActualRoute('team/')}">{$=take('.public.menu-4', 'lng')}</a></li>
-        <li name="menucareer"><a href="{$=getActualRoute('career/')}">{$=take('.public.menu-5', 'lng')}</a></li>
+        <!-- 政策咨询 -->
         <li name="menunews"><a href="{$=getActualRoute('news/')}">{$=take('.public.menu-6', 'lng')}</a></li>
+        <!-- 活动案例 -->
+        <li name="menucase"><a href="{$=getActualRoute('case/')}">{$=take('.public.menu-3', 'lng')}</a></li>
+        <!-- 活动案例 -->
+        <li name="menuservice"><a href="{$=getActualRoute('case/')}">{$=take('.public.menu-9', 'lng')}</a></li>
+        <!-- 团队信息 -->
+        <!--
+        <li name="menuteam"><a href="{$=getActualRoute('team/')}">{$=take('.public.menu-4', 'lng')}</a></li>
+        -->
+        <!-- 招募 -->
+        <!--
+        <li name="menucareer"><a href="{$=getActualRoute('career/')}">{$=take('.public.menu-5', 'lng')}</a></li>
+        -->
+        <!-- 联系我们 -->
+        <!--
         <li name="menucontactus"><a href="{$=getActualRoute('contactus/')}">{$=take('.public.menu-7', 'lng')}</a></li>
+        -->
+        <!-- 关于我们 -->
+        <li name="menuaboutus"><a href="{$=getActualRoute('aboutus/')}">{$=take('.public.menu-2', 'lng')}</a></li>
+        <!-- 留言咨询 -->
         <li name="menuconsult"><a href="{$=getActualRoute('consult/')}">{$=take('.public.menu-8', 'lng')}</a></li>
       </ul>
     </div>

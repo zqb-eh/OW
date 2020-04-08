@@ -8,11 +8,11 @@
   <item_list>
     <item>
       <name><![CDATA[title]]></name>
-      <zh-cn><![CDATA[新闻动态]]></zh-cn>
+      <zh-cn><![CDATA[最新政策]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[category]]></name>
-      <zh-cn><![CDATA[新闻分类]]></zh-cn>
+      <zh-cn><![CDATA[政策]]></zh-cn>
     </item>
   </item_list>
 </xml>

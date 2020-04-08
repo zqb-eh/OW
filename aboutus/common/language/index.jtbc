@@ -10,5 +10,13 @@
       <name><![CDATA[title]]></name>
       <zh-cn><![CDATA[关于我们]]></zh-cn>
     </item>
+    <item>
+          <name><![CDATA[contact-title]]></name>
+          <zh-cn><![CDATA[联系我们]]></zh-cn>
+        </item>
+        <item>
+          <name><![CDATA[contact-content]]></name>
+          <zh-cn><![CDATA[联系我们]]></zh-cn>
+        </item>
   </item_list>
 </xml>

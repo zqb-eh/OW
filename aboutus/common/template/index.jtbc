@@ -8,7 +8,8 @@
   <item_list>
     <item>
       <name><![CDATA[detail]]></name>
-      <default><![CDATA[{$=take('.public.header')}
+      <default>
+      <![CDATA[{$=take('.public.header')}
   <div class="container">
     <div class="cupboard clear_float">
       <div class="side">
@@ -24,7 +25,8 @@
       </div>
     </div>
   </div>
-{$=take('.public.footer')}]]></default>
+{$=take('.public.footer')}]]>
+</default>
     </item>
   </item_list>
 </xml>

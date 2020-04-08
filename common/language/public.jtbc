@@ -20,7 +20,7 @@
     </item>
     <item>
       <name><![CDATA[menu-3]]></name>
-      <zh-cn><![CDATA[产品案例]]></zh-cn>
+      <zh-cn><![CDATA[活动]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[menu-4]]></name>
@@ -32,7 +32,7 @@
     </item>
     <item>
       <name><![CDATA[menu-6]]></name>
-      <zh-cn><![CDATA[新闻动态]]></zh-cn>
+      <zh-cn><![CDATA[资讯]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[menu-7]]></name>
@@ -41,6 +41,10 @@
     <item>
       <name><![CDATA[menu-8]]></name>
       <zh-cn><![CDATA[留言咨询]]></zh-cn>
+    </item>
+    <item>
+       <name><![CDATA[menu-9]]></name>
+       <zh-cn><![CDATA[服务]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[keywords]]></name>
