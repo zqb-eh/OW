@@ -52,14 +52,55 @@
     </div>
     <span mode="submenu" selector="div.menu" class="menu"><em class="e1"></em><em class="e2"></em><em class="e3"></em></span>
   </div>
-  <div class="headertakeup"></div>]]>
-      </default>
+  <div class="headertakeup"></div>]]></default>
     </item>
     <item>
       <name><![CDATA[footer]]></name>
-      <default><![CDATA[  <div class="footer">
-    <div class="copyright">&copy; 2004-{$=formatDate($getDateTime(), '-1')} <a href="http://www.jtbc.cn/">JTBC</a>(<a href="http://www.jtbc.cn/">CMS</a>) All Rights Reserved.<br /><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备14034375号-1</a></div>
-  </div>
+      <default><![CDATA[  
+        <div class="footer">
+            <!-- product -->
+            <div class="baisc-info">
+                <div class="logo">
+                    <img class="footer-logo" src="/OW/static-resources/images/zqb-logo-nobg.png"/>
+                </div>
+                <div class="QRcode">
+                    <div class="imgbox">
+                        <img class="footer-logo" src="/OW/static-resources/images/zqb-qrcode_for_gh_8cm.jpg"/>
+                        <div class="textbox">政企帮公众号</div>
+                    </div>
+                    <div class="imgbox">
+                        <img class="footer-logo" src="/OW/static-resources/images/namecard-gh_12cm.jpg"/>
+                        <div class="textbox">智能名片小程序</div>
+                    </div>
+                    <div class="imgbox">
+                        <img class="footer-logo" src="/OW/static-resources/images/smfwdy-qrcode_for_gh_12cm_344.jpg"/>
+                        <div class="textbox">商贸流通服务中心</div>
+                    </div>
+                    <div class="imgbox">
+                        <img class="footer-logo" src="/OW/static-resources/images/smfwfw-qrcode_for_gh_8cm_344.jpg"/>
+                        <div class="textbox">商贸流通服务平台</div>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <div class="service-tel">023-88256886</div>
+                    <div class="service-date">免费服务热线（工作日：09:00-18:00）</div>
+                </div>
+            </div>
+          <!-- friendly link -->
+          <div class="firendly-link">
+            <span>
+              友情链接：
+              <a href="http://sww.cq.gov.cn/" target="_blank">重庆市商务委</a>
+              <a href="http://sww.cq.gov.cn/" target="_blank">重庆中小商贸流通企业公共服务平台</a>
+              <a href="http://www.cq.gov.cn/" target="_blank">重庆市人民政府</a>
+            </span>
+          </div>
+          <div class="copyright">
+            &copy; 2019-{$=formatDate($getDateTime(), '-1')} 
+            <a href="https://zhengqibang.cn/">政企帮</a> All Rights Reserved.
+            <a href="http://www.beian.miit.gov.cn/" target="_blank">渝ICP备20000353号</a>
+          </div>
+        </div>
 </div>
 <script type="text/javascript">$(document).ready(function() { jtbc.frontend.ready(); });</script>
 </body>
