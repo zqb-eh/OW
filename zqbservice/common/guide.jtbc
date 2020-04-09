@@ -8,7 +8,7 @@
   <item_list>
     <item>
       <name><![CDATA[guide]]></name>
-      <zh-cn><![CDATA[{"text":"联系我们","icon":"8","link":"manage.php?type=edit"}]]></zh-cn>
+      <zh-cn><![CDATA[{"text":"服务联盟","icon":"8","link":"manage.php?type=edit"}]]></zh-cn>
     </item>
   </item_list>
 </xml>

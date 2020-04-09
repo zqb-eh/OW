@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[default]]></name>
+      <default><![CDATA[{$=take('.public.header')}
+  <div class="container">
+    <div class="cupboard">
+      <div class="full content">
+        <h1>{$=htmlEncode($take('index.title', 'lng'))}</h1>
+        <div class="text">{$=encodeText($take('index.content', 'lng'))}</div>
+      </div>
+    </div>
+  </div>
+{$=take('.public.footer')}]]></default>
+    </item>
+  </item_list>
+</xml>
