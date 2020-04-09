@@ -553,3 +553,23 @@ a.link {
     font-size: 1.2rem
   }
 }
+
+/* 留言咨询 */
+.left-side {
+    width: 60%;
+    display: inline-block;
+}
+.right-side {
+    width: 35%;
+    display: inline-block;
+    text-align: center;
+}
+.title-text {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.time-10mins {
+    color: #ff6347;
+    font-weight: 900;
+    font-size: 1.2em;
+}

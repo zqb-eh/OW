@@ -9,27 +9,39 @@
     <item>
       <name><![CDATA[default]]></name>
       <default><![CDATA[{$=take('.public.header')}
-  <div class="container">
-    <div class="cupboard">
-      <div class="full content">
-        <h1>{$=htmlEncode($take('index.title', 'lng'))}</h1>
-        <div class="text">
-          <p align="center">{$=htmlEncode($take('index.text-tips-1', 'lng'))}</p>
-          <div class="tinyform">
-            <form mode="ajaxPost" action="api.php?type=action&amp;action=add" onsubmit="return false;">
-              <ul>
-                <li><input type="text" name="name" placeholder="{$=take('global.config.name', 'lng')}" class="i1" /></li>
-                <li><input type="text" name="mobile" placeholder="{$=take('global.config.mobile', 'lng')}" class="i1" /></li>
-                <li><input type="text" name="email" placeholder="{$=take('global.config.email', 'lng')}" class="i1" /></li>
-                <li><textarea name="content" placeholder="{$=take('global.config.content', 'lng')}" class="t1"></textarea></li>
-                <li><button type="submit" class="b2 submit">{$=take('global.config.submit', 'lng')}</button></li>
-              </ul>
-            </form>
-          </div>
+        <div class="container">
+            <div class="cupboard">
+            <div class="full content">
+                <h1>{$=htmlEncode($take('index.title', 'lng'))}</h1>
+                <div class="text">
+                    <!-- 留言联系我们 -->
+                    <div class="left-side">
+                        <p align="center">{$=htmlEncode($take('index.text-tips-1', 'lng'))}</p>
+                        <div class="tinyform">
+                            <form mode="ajaxPost" action="api.php?type=action&amp;action=add" onsubmit="return false;">
+                            <ul>
+                                <li><input type="text" name="name" placeholder="{$=take('global.config.name', 'lng')}" class="i1" /></li>
+                                <li><input type="text" name="mobile" placeholder="{$=take('global.config.mobile', 'lng')}" class="i1" /></li>
+                                <li><input type="text" name="email" placeholder="{$=take('global.config.email', 'lng')}" class="i1" /></li>
+                                <li><textarea name="content" placeholder="{$=take('global.config.content', 'lng')}" class="t1"></textarea></li>
+                                <li><button type="submit" class="b2 submit">{$=take('global.config.submit', 'lng')}</button></li>
+                            </ul>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 钉钉消息触达 -->
+                    <div class="right-side">
+                        <div class="title-text">快速通道</div>
+
+                        <div class="hint-text">如果您的问题比较紧急</div>
+                        <div>请点击如下按钮或手机扫描二维码</div>
+                        <div>填写问题详情我们将在最快<span class="time-10mins">10分钟内</span>响应您的需求</div>
+                        <button type="button" class="b2">快速联系</button>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 {$=take('.public.footer')}]]></default>
     </item>
   </item_list>
