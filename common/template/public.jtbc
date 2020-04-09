@@ -60,25 +60,29 @@
         <div class="footer">
             <!-- product -->
             <div class="baisc-info">
-                <div class="logo">
-                    <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/zqb-logo-nobg.png"/>
+                <div class="logo-box">
+                    <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/footer-logo.png"/>
                 </div>
                 <div class="QRcode">
                     <div class="imgbox">
-                        <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/zqb-qrcode_for_gh_8cm.jpg"/>
+                        <img class="footer-qrcode" src="{$=$global.assetspath}/static-resources/images/zqb-qrcode_for_gh_8cm.jpg"/>
                         <div class="textbox">政企帮公众号</div>
                     </div>
                     <div class="imgbox">
-                        <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/namecard-gh_12cm.jpg"/>
+                        <img class="footer-qrcode" src="{$=$global.assetspath}/static-resources/images/namecard-gh_12cm.jpg"/>
                         <div class="textbox">智能名片小程序</div>
                     </div>
                     <div class="imgbox">
-                        <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/smfwdy-qrcode_for_gh_12cm_344.jpg"/>
+                        <img class="footer-qrcode" src="{$=$global.assetspath}/static-resources/images/smfwdy-qrcode_for_gh_12cm_344.jpg"/>
                         <div class="textbox">商贸流通服务中心</div>
                     </div>
                     <div class="imgbox">
-                        <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/smfwfw-qrcode_for_gh_8cm_344.jpg"/>
+                        <img class="footer-qrcode" src="{$=$global.assetspath}/static-resources/images/smfwfw-qrcode_for_gh_8cm_344.jpg"/>
                         <div class="textbox">商贸流通服务平台</div>
+                    </div>
+                    <div class="imgbox">
+                        <img class="footer-qrcode" src="{$=$global.assetspath}/static-resources/images/joinusnoborder.jpg"/>
+                        <div class="textbox">加入我们</div>
                     </div>
                 </div>
                 <div class="contact-us">
