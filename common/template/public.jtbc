@@ -17,7 +17,7 @@
 <meta name="keywords" content="{$=htmlEncode($getPageParam('keywords'))}" />
 <meta name="description" content="{$=htmlEncode($getPageParam('description'))}" />
 <meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
-<link rel="shortcut icon" href="/OW/static-resources/images/zqb-logo.png" type="image/x-icon" />
+<link rel="shortcut icon" href="{$=$global.assetspath}/static-resources/images/zqb-logo.png" type="image/x-icon" />
 <title>{$=htmlEncode($getPageTitle())}</title>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.js"></script>
@@ -61,23 +61,23 @@
             <!-- product -->
             <div class="baisc-info">
                 <div class="logo">
-                    <img class="footer-logo" src="/OW/static-resources/images/zqb-logo-nobg.png"/>
+                    <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/zqb-logo-nobg.png"/>
                 </div>
                 <div class="QRcode">
                     <div class="imgbox">
-                        <img class="footer-logo" src="/OW/static-resources/images/zqb-qrcode_for_gh_8cm.jpg"/>
+                        <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/zqb-qrcode_for_gh_8cm.jpg"/>
                         <div class="textbox">政企帮公众号</div>
                     </div>
                     <div class="imgbox">
-                        <img class="footer-logo" src="/OW/static-resources/images/namecard-gh_12cm.jpg"/>
+                        <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/namecard-gh_12cm.jpg"/>
                         <div class="textbox">智能名片小程序</div>
                     </div>
                     <div class="imgbox">
-                        <img class="footer-logo" src="/OW/static-resources/images/smfwdy-qrcode_for_gh_12cm_344.jpg"/>
+                        <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/smfwdy-qrcode_for_gh_12cm_344.jpg"/>
                         <div class="textbox">商贸流通服务中心</div>
                     </div>
                     <div class="imgbox">
-                        <img class="footer-logo" src="/OW/static-resources/images/smfwfw-qrcode_for_gh_8cm_344.jpg"/>
+                        <img class="footer-logo" src="{$=$global.assetspath}/static-resources/images/smfwfw-qrcode_for_gh_8cm_344.jpg"/>
                         <div class="textbox">商贸流通服务平台</div>
                     </div>
                 </div>
