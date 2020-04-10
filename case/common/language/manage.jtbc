@@ -8,31 +8,31 @@
   <item_list>
     <item>
       <name><![CDATA[text-menu-1]]></name>
-      <zh-cn><![CDATA[全部案例列表]]></zh-cn>
+      <zh-cn><![CDATA[全部活动列表]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-menu-2]]></name>
-      <zh-cn><![CDATA[已发布的案例列表]]></zh-cn>
+      <zh-cn><![CDATA[已发布的活动列表]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-menu-3]]></name>
-      <zh-cn><![CDATA[暂未发布的案例列表]]></zh-cn>
+      <zh-cn><![CDATA[暂未发布的活动列表]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-menu-4]]></name>
-      <zh-cn><![CDATA[添加案例]]></zh-cn>
+      <zh-cn><![CDATA[添加活动]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tit-add]]></name>
-      <zh-cn><![CDATA[添加案例]]></zh-cn>
+      <zh-cn><![CDATA[添加活动]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tit-edit]]></name>
-      <zh-cn><![CDATA[编辑案例]]></zh-cn>
+      <zh-cn><![CDATA[编辑活动]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tit-list]]></name>
-      <zh-cn><![CDATA[案例列表]]></zh-cn>
+      <zh-cn><![CDATA[活动列表]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tips-field-image]]></name>
@@ -40,7 +40,7 @@
     </item>
     <item>
       <name><![CDATA[text-tips-list-null]]></name>
-      <zh-cn><![CDATA[当前条件下没有找到任何案例]]></zh-cn>
+      <zh-cn><![CDATA[当前条件下没有找到任何活动]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tips-edit-done]]></name>
@@ -48,19 +48,19 @@
     </item>
     <item>
       <name><![CDATA[log-add-1]]></name>
-      <zh-cn><![CDATA[添加案例[{$id}]成功]]></zh-cn>
+      <zh-cn><![CDATA[添加活动[{$id}]成功]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[log-edit-1]]></name>
-      <zh-cn><![CDATA[编辑案例[{$id}]成功]]></zh-cn>
+      <zh-cn><![CDATA[编辑活动[{$id}]成功]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[log-delete-1]]></name>
-      <zh-cn><![CDATA[删除案例[{$id}]成功]]></zh-cn>
+      <zh-cn><![CDATA[删除活动[{$id}]成功]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[log-batch-1]]></name>
-      <zh-cn><![CDATA[批量操作({$batch})案例[{$id}]成功]]></zh-cn>
+      <zh-cn><![CDATA[批量操作({$batch})活动[{$id}]成功]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[log-upload-1]]></name>

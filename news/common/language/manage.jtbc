@@ -8,35 +8,35 @@
   <item_list>
     <item>
       <name><![CDATA[text-menu-1]]></name>
-      <zh-cn><![CDATA[全部新闻列表]]></zh-cn>
+      <zh-cn><![CDATA[全部资讯列表]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-menu-2]]></name>
-      <zh-cn><![CDATA[已发布的新闻列表]]></zh-cn>
+      <zh-cn><![CDATA[已发布的资讯列表]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-menu-3]]></name>
-      <zh-cn><![CDATA[暂未发布的新闻列表]]></zh-cn>
+      <zh-cn><![CDATA[暂未发布的资讯列表]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-menu-4]]></name>
-      <zh-cn><![CDATA[添加新闻]]></zh-cn>
+      <zh-cn><![CDATA[添加资讯]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tit-add]]></name>
-      <zh-cn><![CDATA[添加新闻]]></zh-cn>
+      <zh-cn><![CDATA[添加资讯]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tit-edit]]></name>
-      <zh-cn><![CDATA[编辑新闻]]></zh-cn>
+      <zh-cn><![CDATA[编辑资讯]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tit-list]]></name>
-      <zh-cn><![CDATA[新闻列表]]></zh-cn>
+      <zh-cn><![CDATA[资讯列表]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tips-list-null]]></name>
-      <zh-cn><![CDATA[当前条件下没有找到任何新闻]]></zh-cn>
+      <zh-cn><![CDATA[当前条件下没有找到任何资讯]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[text-tips-add-error-1]]></name>
@@ -52,19 +52,19 @@
     </item>
     <item>
       <name><![CDATA[log-add-1]]></name>
-      <zh-cn><![CDATA[添加新闻[{$id}]成功]]></zh-cn>
+      <zh-cn><![CDATA[添加资讯[{$id}]成功]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[log-edit-1]]></name>
-      <zh-cn><![CDATA[编辑新闻[{$id}]成功]]></zh-cn>
+      <zh-cn><![CDATA[编辑资讯[{$id}]成功]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[log-delete-1]]></name>
-      <zh-cn><![CDATA[删除新闻[{$id}]成功]]></zh-cn>
+      <zh-cn><![CDATA[删除资讯[{$id}]成功]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[log-batch-1]]></name>
-      <zh-cn><![CDATA[批量操作({$batch})新闻[{$id}]成功]]></zh-cn>
+      <zh-cn><![CDATA[批量操作({$batch})资讯[{$id}]成功]]></zh-cn>
     </item>
     <item>
       <name><![CDATA[log-upload-1]]></name>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbcf" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[pagesize]]></name>
+      <zh-cn><![CDATA[20]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[upload_path]]></name>
+      <zh-cn><![CDATA[common/assets/upload/]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[upload_filetype]]></name>
+      <zh-cn><![CDATA[jpg,gif,png]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[uninstall]]></name>
+      <zh-cn><![CDATA[{"db":"1"}]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

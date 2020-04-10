@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,zh-cn</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[text-tit-edit]]></name>
+      <zh-cn><![CDATA[编辑内容]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-tips-edit-error-1]]></name>
+      <zh-cn><![CDATA[标题不能为空]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-tips-edit-error-others]]></name>
+      <zh-cn><![CDATA[文件保存失败，请检查服务器权限设置]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[text-tips-edit-done]]></name>
+      <zh-cn><![CDATA[编辑成功]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[log-edit-1]]></name>
+      <zh-cn><![CDATA[编辑内容成功]]></zh-cn>
+    </item>
+    <item>
+      <name><![CDATA[log-upload-1]]></name>
+      <zh-cn><![CDATA[上传文件[{$filepath}]成功]]></zh-cn>
+    </item>
+  </item_list>
+</xml>

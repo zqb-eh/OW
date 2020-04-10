@@ -12,7 +12,7 @@
     </item>
     <item>
       <name><![CDATA[guide]]></name>
-      <zh-cn><![CDATA[{"text":"产品案例","icon":"9","link":"manage.php?type=list"}]]></zh-cn>
+      <zh-cn><![CDATA[{"text":"活动案例","icon":"9","link":"manage.php?type=list"}]]></zh-cn>
     </item>
   </item_list>
 </xml>
