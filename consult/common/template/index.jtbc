@@ -13,9 +13,9 @@
             <div class="cupboard">
             <div class="full content">
                 <h1>{$=htmlEncode($take('index.title', 'lng'))}</h1>
-                <div class="text">
+                <div class="row text">
                     <!-- 留言联系我们 -->
-                    <div class="left-side">
+                    <div class="left-side col-md-7">
                         <p align="center">{$=htmlEncode($take('index.text-tips-1', 'lng'))}</p>
                         <div class="tinyform">
                             <form mode="ajaxPost" action="api.php?type=action&amp;action=add" onsubmit="return false;">
@@ -30,13 +30,19 @@
                         </div>
                     </div>
                     <!-- 钉钉消息触达 -->
-                    <div class="right-side">
+                    <div class="right-side col-md-5">
                         <div class="title-text">快速通道</div>
-
                         <div class="hint-text">如果您的问题比较紧急</div>
                         <div>请点击如下按钮或手机扫描二维码</div>
                         <div>填写问题详情我们将在最快<span class="time-10mins">10分钟内</span>响应您的需求</div>
-                        <button type="button" class="b2">快速联系</button>
+                        <div class="imgbox">
+                          <img src="{$=$global.assetspath}/static-resources/images/contactus-qrcode.jpg">
+                          <div class="hint-text">手机扫描二维码，填写详情</div>
+                        </div>
+                        <a href="https://external.h3yun.com/su/re/DEwy?engineCode=xb8chjd4on6a7fb4vwjcvqwt2" target="_blank">
+                          <button type="button" class="submit b2">快速联系</button>
+                        </a>
+
                     </div>
                 </div>
             </div>

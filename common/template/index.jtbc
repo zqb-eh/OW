@@ -45,7 +45,8 @@
         </div>
       </div>
     </div>
-    <div class="home_item">
+    <!-- 隐藏友情链接 -->
+    <!-- <div class="home_item">
       <h2>{$=take('global.universal/link:sel_group.1', 'lng')}</h2>
       <div class="cupboard">
         <div class="full links clear_float">
@@ -54,7 +55,7 @@
           </jtbc>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 {$=take('.public.footer')}]]></default>
     </item>
