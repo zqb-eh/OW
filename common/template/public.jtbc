@@ -20,12 +20,13 @@
 <link rel="shortcut icon" href="{$=$global.assetspath}/static-resources/images/zqb-logo.png" type="image/x-icon" />
 <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 <title>{$=htmlEncode($getPageTitle())}</title>
-<script type="text/javascript" src="{$=$global.assetspath}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="{$=$global.assetspath}/js/bootstrap.js"></script>
 <script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.js"></script>
+<link type="text/css" rel="stylesheet" href="{$=$global.assetspath}/themes/{$=THEME}/bootstrap.css" />
 <script type="text/javascript" src="{$=$global.assetspath}/js/jtbc.frontend.js"></script>
+<link type="text/css" rel="stylesheet" href="{$=$global.assetspath}/themes/{$=THEME}/bootstrap.css" />
 <link type="text/css" rel="stylesheet" href="{$=$global.assetspath}/themes/{$=THEME}/global.css" />
-<link type="text/css" rel="stylesheet" href="{$=$global.assetspath}/themes/{$=THEME}/bootstrap-3.3.4.css" />
 </head>
 <body>
 <div class="wrap">

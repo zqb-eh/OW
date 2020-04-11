@@ -6,12 +6,9 @@
     <base>item_list</base>
   </configure>
   <item_list>
-    <item>
-      <name>
-        <![CDATA[default]]>
-      </name>
-      <default>
-        <![CDATA[{$=take('.public.header')}
+    <item> 
+      <name><![CDATA[default]]></name>
+      <default><![CDATA[{$=take('.public.header')}
         <div class="container">
             <div class="cupboard">
             <div class="full content">
@@ -51,8 +48,7 @@
             </div>
             </div>
         </div>
-{$=take('.public.footer')}]]>
-      </default>
+{$=take('.public.footer')}]]></default>
     </item>
   </item_list>
 </xml>
