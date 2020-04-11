@@ -1069,3 +1069,35 @@ icons icon a.link {
   50% { left: 90% }
   100% { left: 0% }
 }
+.sidebar-nav li a {
+  color: #dddddd;
+  display: block;
+  padding: 10px 15px 10px 30px;
+  text-decoration: none;
+}
+.sidebar-nav li.open:hover before {
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 100%;
+}
+.sidebar-nav .dropdown-menu {
+  background-color: #222222;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus
+{
+  background-color: transparent;
+  color: #2553b3;
+  text-decoration: none;
+}

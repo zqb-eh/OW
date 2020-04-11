@@ -13,7 +13,7 @@
                 <div class="container">
                     <div class="cupboard clear_float">
                         <div class="side">
-                            <dl class="option clear_float">
+                            <dl class="option clear_float nav sidebar-nav">
                                 <dt>{$=take('index.category', 'lng')}</dt>
                                 {$=transfer('genre=universal/category;type=order;baseurl=./;tpl=dd-list', array('fid' =>
                                 0, 'genre' => '{$>genre}'))}
@@ -22,7 +22,7 @@
                         <div class="main">
                             <div class="list">
                                 <h1>{$=take('index.title', 'lng')}</h1>
-                                <ul>{@}
+                                <ul class="nav sidebar-nav">{@}
                                     <li><a href="{$=htmlEncode($createURL('detail', '{$id}'))}">{$topic}</a><span
                                             class="time">{$=formatDate('{$time}', '1')}</span></li>
                                     {@}
