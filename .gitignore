@@ -1,4 +1,4 @@
 # git忽略文件
 *.idea
-cache/*.cache
+cache/*
 .DS_Store
