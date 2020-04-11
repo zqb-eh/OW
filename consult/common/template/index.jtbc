@@ -6,7 +6,7 @@
     <base>item_list</base>
   </configure>
   <item_list>
-    <item>
+    <item> 
       <name><![CDATA[default]]></name>
       <default><![CDATA[{$=take('.public.header')}
         <div class="container">
