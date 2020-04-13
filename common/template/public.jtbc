@@ -32,7 +32,7 @@
 <div class="wrap">
   <div class="header">
     <div class="desk"></div>
-    <div class="logo"><a href="{$=getActualRoute('./')}">政企帮</a></div>
+    <div class="logo"><a href="{$=getActualRoute('./')}"></a></div>
     <div class="menu" mode="pitchon" pitchon="li[name='menu{$=$genre}']">
       <ul>
         <li name="menu"><a href="{$=getActualRoute('./')}">{$=take('.public.menu-1', 'lng')}</a></li>
