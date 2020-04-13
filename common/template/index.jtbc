@@ -21,31 +21,16 @@
 
                     <!--新闻资讯-->
                     <div class="home_item">
-                        <h2>{$=take('global.news:index.title', 'lng')}</h2>
+                        <div>
+                            <h2>{$=take('global.news:index.title', 'lng')}</h2>
+                            <span class="">最新政策，最新政策，最新政策最新政策最新政策最新政策</span>
+                        </div>
                         <div class="cupboard">
                             <div class="full synopsis clear_float">
-                                <jtbc $function="transfer" $parameter="genre=team;type=new;limit=6">
-                                    <div class="cupboard clear_float">
-                                        <div class="side">
-                                            <dl class="option clear_float nav sidebar-nav">
-                                                <dt>{$=take('index.category', 'lng')}</dt>
-                                                {$=transfer('genre=universal/category;type=order;baseurl=./;tpl=dd-list', array('fid' =>
-                                                0, 'genre' => '{$>genre}'))}
-                                            </dl>
-                                        </div>
-                                        <div class="main">
-                                            <div class="list">
-                                                <h1>{$=take('index.title', 'lng')}</h1>
-                                                <ul class="nav sidebar-nav">{@}
-                                                    <li><a href="{$=htmlEncode($createURL('detail', '{$id}'))}">{$topic}</a><span
-                                                            class="time">{$=formatDate('{$time}', '1')}</span></li>
-                                                    {@}
-                                                </ul>
-                                            </div>
-                                            <div class="pagi">{$=pagi('{$-pagi-pagenum}', '{$-pagi-pagetotal}', $createURL('list',
-                                                '{$-category}', array('page' => '[~page]')), 'pagi-2')}
-                                            </div>
-                                        </div>
+                                <jtbc $function="transfer" $parameter="genre=news;type=category;limit=6">
+                                    <div class="">
+                                        <a href="{$-baseurl}{$=htmlEncode($createURL('detail', '{$id}'))}">{$topic}</a>
+                                        </a>
                                     </div>
                                 </jtbc>
                             </div>
